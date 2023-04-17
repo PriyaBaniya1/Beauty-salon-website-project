@@ -283,6 +283,24 @@ section{
     gap: 1.5rem;
 }
 
+ .styles .heading2{
+    text-align: center;
+    color: var(--primary-color);
+    padding: 2rem;
+    font-size: 2.5rem;
+ }
+
+ .styles .heading3{
+    text-align: center;
+    color: var(--primary-color);
+    display: block;
+    margin-top: 5rem;
+    margin-bottom: auto;
+    padding: 2rem;
+    font-size: 3rem;
+ }
+
+
  .styles .box-container .box .image{
     overflow: hidden;
     width: 100%;
@@ -290,8 +308,98 @@ section{
 } 
 
 .styles .box-container .box .image img{
-    object-fit: cover;
+    width: 50%;
 }
+
+.styles .box-container .box .image1 img{
+   width: 35vh;
+   height: 40vh;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.styles .box-container .box .image2 img{
+   width: 35vh;
+   height: 40vh;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.styles .box-container .box .image3 img{
+   width: 35vh;
+   height: 40vh;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.styles .box-container .box .image4 img{
+    width: 35vh;
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styles .heading4 {
+    text-align: center;
+    color: var(--primary-color);
+    display: block;
+    margin-top: 6rem;
+    margin-bottom: auto;
+    padding: 2rem;
+    font-size: 2.7rem;
+ }
+
+.styles .box-container .box .image5 img{
+    width: 35vh;
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+ 
+ .styles .box-container .box .image6 img{
+    width: 35vh;
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+ 
+ .styles .box-container .box .image7 img{
+    width: 35vh;
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+ 
+ .styles .box-container .box .image8 img{
+     width: 35vh;
+     height: 40vh;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .styles .heading5 {
+    text-align: center;
+    color: var(--primary-color);
+    display: block;
+    margin-top: 6rem;
+    margin-bottom: auto;
+    padding: 2rem;
+    font-size: 3rem;
+ }
 
 .styles .box-container .box .content{
     text-align: center;
@@ -418,11 +526,13 @@ section{
     border: 2px solid var(--main-color);
     font-size: 17px;
     font-weight: bold;
+    
 }
 
 .pricing .box-container .box button:hover{
     color: var(--white);
     background: var(--main-color);
+    
 }
 
 /* pricing*/
@@ -432,19 +542,45 @@ section{
 /* visit */
 
 .visit{
-    background-image: url(../images/visit.png);
+    background-image: url(../images/visit.jpg);
     background-size: cover;
     background-position: center;
+    height: 100vh;
+    
 } 
 
+.container{
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    
+}
+
+.visit .heading{
+    color: var(--white);
+    
+
+}
+.heading{
+    margin: auto;
+    width: 70%;
+    text-align: auto;
+}
 .visit .row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
 .visit .row .image{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
     flex: 1 1 40rem;
 }
 
@@ -456,8 +592,96 @@ section{
     flex: 1 1 40rem;
     border: 0.1rem solid var(--main-color);
     padding: 2rem;
+
+}
+
+.visit .row form h3{
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--white);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+
+
+}
+
+.visit .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--main-color);
+    /* border: var(--border); */
+}
+
+.visit .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    /* color: var(--white); */
+    text-transform: none;
+    background: none;
+    
+}
+
+.btn {
+    height: 40px;
+    /* margin: 0; */
+    position:relative;
+    width: 140px;
+    outline: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: var(--box-shadow);
+    color:var(--main-color);
+    border: 2px solid var(--main-color);
+    font-size: 17px;
+    font-weight: bold;
+    left: 30%;
+    font-size: 1.7rem;
+    
+}
+
+.btn:hover{
+    background: var(--hover);
+}
+
+/* visit */
+
+
+/* review */
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    border: 1px solid;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: 2rem 0;
+}
+
+.review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 
-
-/* visit */
+/* review */
